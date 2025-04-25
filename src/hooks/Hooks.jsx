@@ -40,7 +40,7 @@ const useTictoe=()=>{
     const getStatusmsg=()=>{
         const winner=calculateWinner(squares);
         if(winner) return `Player ${winner} wins`;
-        if(!squares.includes(null)) return 'its a draw';
+        if(!squares.includes(null)) return 'it is a draw';
         return `Player${isX ? "X" : "O"}turn`;
     }
     return{Reset,calculateWinner,handleClick,squares,getStatusmsg};
